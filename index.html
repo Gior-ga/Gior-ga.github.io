@@ -1,46 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giorgi Bagauri | Portfolio</title>
+  <style>
+    /* =================== GENERAL STYLES =================== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+
+    a {
+      color: #0077b5; /* LinkedIn-blue style */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* =================== CONTAINER =================== */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #222;
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #555;
+      border-bottom: 2px solid #0077b5;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    /* =================== PROJECT LINKS =================== */
+    .project a {
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 0.95rem;
+    }
+
+    /* =================== SKILLS =================== */
+    .skills li {
+      display: inline-block;
+      background-color: #e0f0ff;
+      padding: 5px 10px;
+      margin: 5px 5px 5px 0;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    /* =================== FOOTER =================== */
+    .contact p {
+      margin: 5px 0;
+    }
+
+    /* Responsive */
+    @media(max-width:600px){
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-<h1>Giorgi Bagauri</h1>
+<div class="container">
+  <!-- HEADER -->
+  <h1>Giorgi Bagauri</h1>
+  <p>Computer Science student with strong interest in low-level programming, algorithms, and AI-assisted software development.</p>
 
-<p>
-Computer Science student interested in low-level programming and AI-assisted tools.
-</p>
+  <!-- PROJECTS -->
+  <h2>Projects</h2>
+  <ul>
+    <li class="project">
+      <strong>Arbitrary Precision Arithmetic (MIPS)</strong><br>
+      Implementation of big integer arithmetic using MIPS assembly.<br>
+      <a href="https://github.com/Gior-ga/MIPS_Arbitrary_Precision_Arithmetic" target="_blank">GitHub Repository</a>
+    </li>
+    <li class="project">
+      <strong>AI-Generated API Test Cases</strong><br>
+      Tool for generating API test cases using AI-assisted logic.<br>
+      <a href="https://github.com/Gior-ga/AI-Generated-API-Test-Cases" target="_blank">GitHub Repository</a>
+    </li>
+    <li class="project">
+      <strong>Prompt Engineering Example</strong><br>
+      Examples of effective prompt engineering for AI outputs.<br>
+      <a href="https://github.com/Gior-ga/Prompt-Engineering-Example" target="_blank">GitHub Repository</a>
+    </li>
+  </ul>
 
-<h2>Projects</h2>
-<ul>
-  <li>
-    <strong>Arbitrary Precision Arithmetic (MIPS)</strong><br>
-    <a href="https://github.com/Gior-ga/MIPS_Arbitrary_Precision_Arithmetic">GitHub Repository</a>
-  </li>
-  <li>
-    <strong>AI-Generated API Test Cases</strong><br>
-    <a href="https://github.com/Gior-ga/AI-Generated-API-Test-Cases">GitHub Repository</a>
-  </li>
-    <li>
-    <strong>Prompt-Engineering-Example</strong><br>
-    <a href="https://github.com/Gior-ga/Prompt-Engineering-Example">GitHub Repository</a>
-  </li>
-</ul>
+  <!-- SKILLS -->
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Python</li>
+    <li>MIPS Assembly</li>
+    <li>Algorithms</li>
+    <li>Low-level programming</li>
+    <li>Prompt Engineering</li>
+    <li>GitHub</li>
+  </ul>
 
-<h2>Skills</h2>
-<ul>
-  <li>Python, MIPS Assembly</li>
-  <li>Algorithms, Low-level programming</li>
-  <li>Prompt Engineering, GitHub</li>
-</ul>
+  <!-- LINKS -->
+  <h2>Links</h2>
+  <p><a href="https://www.linkedin.com/in/giorgi-bagauri-3a1a81378" target="_blank">LinkedIn Profile</a></p>
 
-<h2>Links</h2>
-<p>
-<a href="www.linkedin.com/in/giorgi-bagauri-3a1a81378">LinkedIn</a>
-</p>
-
-<h2>Contact</h2>
-<p>Email: g.bagauri@alte.edu.ge</p>
+  <!-- CONTACT -->
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>Email: g.bagauri@alte.edu.ge</p>
+  </div>
+</div>
 
 </body>
 </html>
